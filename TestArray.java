@@ -1,12 +1,17 @@
 public class TestArray {
-
     public static void main(String[] args) {
         double[] myList = { 1.9, 29, 3.4, 3.5 };
+        int[] array = { 1, 7, 8, 9 };
+        for (int i : array) {
+            // sysout简写
+            System.out.println("foreach循环的值:" + i);
+        }
 
         // 打印所有数组元素
         for (int i = 0; i < myList.length; i++) {
-            System.out.println(myList[i] + " ");
+            System.out.println(myList[i]);
         }
+
         // 计算所有元素的总和
         double total = 0;
         for (int i = 0; i < myList.length; i++) {
