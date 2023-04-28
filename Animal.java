@@ -1,6 +1,7 @@
 public class Animal {
    int myAge;
    String sex;
+   String myHobby;
 
    public Animal(String name) {
       // 这个构造器仅有一个参数：name
@@ -16,13 +17,14 @@ public class Animal {
       /* 实例化对象 */
       // Object referenceVariable = new Constructor();
       Animal dog = new Animal("tommy");
-      dog.setAge(18);
       String res = dog.getSex("公");
+      dog.setAge(18);
+
       // final代表定义常量
       final boolean a = true;
       System.out.println(a);
 
-      System.out.println("小狗的年龄为 : " + dog.myAge);
+      System.out.println("小狗的年龄为 : " + dog.myHobby);
       System.out.println("小狗的性别为 : " + res);
 
    }
@@ -33,6 +35,9 @@ public class Animal {
 
    public void setAge(int age) {
       this.myAge = age;
-      System.out.println(this);
+   }
+
+   public void setHobby(String hobby) {
+      this.myHobby = hobby;
    }
 }
