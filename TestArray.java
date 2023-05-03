@@ -34,9 +34,5 @@ public class TestArray {
         }
         System.out.println("Max is " + max);
 
-        boolean flag = false;
-        do {
-            System.out.println(flag);
-        } while (flag);
     }
 }
