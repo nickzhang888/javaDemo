@@ -37,5 +37,24 @@ public class TestArray {
         }
         System.out.println("Max is " + max);
 
+        // 反转数组
+        int[] list = { 1, 8, 5, 7 };
+        for (int start = 0, end = list.length - 1; start <= end; start++, end--) {
+            int temp = list[start];
+            list[start] = list[end];
+            list[end] = temp;
+        }
+        printArray(list);
+
+    }
+
+    public static void printArray(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            if (i == arr.length - 1) {
+                System.out.print(arr[i]);
+            } else {
+                System.out.print(arr[i] + ",");
+            }
+        }
     }
 }
