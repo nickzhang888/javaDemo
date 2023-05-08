@@ -1,4 +1,6 @@
-package String;
+package StrBuffer;
+
+import Modifier.Father;
 
 public class SBuffer {
     public static void main(String[] args) {
@@ -17,5 +19,8 @@ public class SBuffer {
         System.out.println(index);
         sb.insert(sb.length(), " world");
         System.out.println(sb);
+        // 测试Father类
+        Father fa = new Father();
+        fa.fn1();
     }
 }

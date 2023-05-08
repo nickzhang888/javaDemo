@@ -1,6 +1,7 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
-public class arrayList {
+public class ArrList {
     public static void main(String[] args) {
         // 创建一个ArrayList
         ArrayList<Person> personList = new ArrayList<>();
@@ -26,14 +27,16 @@ class Person {
     private String name;
     private int age;
 
+    // 构造器,如果要传入参数的话,需自己创建, 默认会创造一个没参数的构造器
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
+    // 重写toString方法转为能见的数组内容
     @Override
     public String toString() {
-        return "Person{" +
+        return "{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
