@@ -1,6 +1,6 @@
 package Modifier;
 
-//private修饰符限制最严格，只允许当前类中访问，其他任何类都不能访问该字段或方法。
+//private修饰符限制最严格，只允许当前类中访问，其他任何类都不能访问该字段或方法,但可以用get和set方法获取和设置。
 //protected修饰符允许在当前类、当前包和当前包的子类中访问。
 
 public class Father {
