@@ -1,6 +1,6 @@
 public class TestCharacter {
-    // Character 类在对象中包装一个基本类型 char 的值,toUpperCase是Character的静态属性不能给实例继承,
-    // 所有实例成员ch不能用toUpperCase方法,但可以用toString方法
+    // Character 类是基本类型 char 的包装类,toUpperCase() 方法需要带参数
+
     public static void main(String[] args) {
         Character ch = 'a';
         String cha = ch.toString().toUpperCase();

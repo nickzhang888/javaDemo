@@ -6,7 +6,7 @@ package Modifier;
 public class Father {
     private int age;
 
-    public void fn1() {
+    public static void fn1() {
         System.out.println("public");
     }
 
