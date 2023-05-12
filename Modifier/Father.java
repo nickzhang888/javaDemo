@@ -5,6 +5,9 @@ package Modifier;
 
 public class Father {
     private int age;
+    public final String name = "nick";
+
+    public String hobby;
 
     public static void fn1() {
         System.out.println("public");

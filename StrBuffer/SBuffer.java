@@ -3,6 +3,12 @@ package StrBuffer;
 import Modifier.Father;
 
 public class SBuffer {
+    public final String str = "comeIn";
+
+    public final void myBuffer() {
+        System.out.println("myBuffer");
+    }
+
     public static void main(String[] args) {
         String str = "hello";
         // 只能使用StringBuffer的构造方法创建
@@ -19,8 +25,6 @@ public class SBuffer {
         System.out.println(index);
         sb.insert(sb.length(), " world");
         System.out.println(sb);
-        // 测试Father类
-        Father fa = new Father();
-        fa.fn1();
+
     }
 }
