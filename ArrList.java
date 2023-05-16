@@ -12,14 +12,27 @@ public class ArrList {
         personList.add(new Person("Alice", 30));
 
         // 查询列表中的元素
-        System.out.println("List contains: " + personList); // 输出 [Person{name='Tom', age=20}, Person{name='Jerry',
-                                                            // age=25}, Person{name='Alice', age=30}]
-        System.out.println("Second element: " + personList.get(1)); // 输出 Person{name='Jerry', age=25}
+        System.out.println("List contains: " + personList);
+        System.out.println("Second element: " + personList.get(1));
 
         // 删除元素
         personList.remove(2); // 删除索引为2的元素
-        System.out.println("List after deletion: " + personList); // 输出 [Person{name='Tom', age=20},
-                                                                  // Person{name='Jerry', age=25}]
+        System.out.println("List after deletion: " + personList);
+
+        // 使用forEach方法遍历列表中的元素
+        personList.forEach(item -> {
+            if (item.getName() == "Tom") {
+                System.out.println(item);
+            }
+        });
+        // foreach循环
+        for (Person item : personList) {
+            if (item.getName() == "Tom") {
+                System.out.println(item);
+                continue;
+            }
+        }
+        ArrayList<String> p = new ArrayList<>();
     }
 }
 
@@ -31,6 +44,10 @@ class Person {
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    public String getName() {
+        return name;
     }
 
     // 重写toString方法转为能见的数组内容

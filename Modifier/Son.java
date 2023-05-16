@@ -8,6 +8,11 @@ public class Son extends Father {
         System.out.println(super.hobby);
     }
 
+    @Override
+    void fn2() {
+        System.out.println("子默认");
+    }
+
     public static void main(String[] args) {
 
         Son son = new Son();
@@ -15,5 +20,6 @@ public class Son extends Father {
         name = "chen";
         System.out.println(name);
         son.show();
+        son.fn2();
     }
 }
