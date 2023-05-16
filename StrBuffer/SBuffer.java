@@ -2,7 +2,7 @@ package StrBuffer;
 
 import Modifier.Father;
 
-public class SBuffer {
+public class SBuffer extends Father {
     public final String str = "comeIn";
 
     public final void myBuffer() {
@@ -25,6 +25,10 @@ public class SBuffer {
         System.out.println(index);
         sb.insert(sb.length(), " world");
         System.out.println(sb);
+
+        // 测试protected
+        SBuffer son = new SBuffer();
+        son.fn3();
 
     }
 }
