@@ -32,7 +32,6 @@ public class ArrList {
                 continue;
             }
         }
-        ArrayList<String> p = new ArrayList<>();
     }
 }
 
