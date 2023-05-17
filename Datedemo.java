@@ -2,13 +2,18 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 
 public class Datedemo {
+    public static String getCurrentDate(String pattern) {
+        Date now = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat(pattern);
+        return sdf.format(now);
+    }
+
     public static void main(String[] args) {
-        Date date = new Date();
-        SimpleDateFormat ft = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss");
-        String res = ft.format(date);
+
+        String res = getCurrentDate("YYYY-MM-dd HH:mm:ss");
         System.out.println(res);
-
-        long a = date.getTime();
-
+        // 时间戳
+        Long time = new Date().getTime();
+        System.out.println(time);
     }
 }

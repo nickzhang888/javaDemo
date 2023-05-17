@@ -2,6 +2,7 @@
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "f:\\桌面文件\\mysql-connector-java-8.0.16.jar"
+        "mysql-connector-java-8.0.16.jar",
+        "mysql-connector-java-5.1.39-bin.jar"
     ]
 }
