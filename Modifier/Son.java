@@ -9,7 +9,7 @@ public class Son extends Father {
     }
 
     @Override
-    void fn2() {
+    void fnDefault() {
         System.out.println("子默认");
     }
 
@@ -20,6 +20,6 @@ public class Son extends Father {
         name = "chen";
         System.out.println(name);
         son.show();
-        son.fn2();
+        son.fnDefault();
     }
 }

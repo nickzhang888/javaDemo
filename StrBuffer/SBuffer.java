@@ -27,8 +27,8 @@ public class SBuffer extends Father {
         System.out.println(sb);
 
         // 测试protected
-        SBuffer son = new SBuffer();
-        son.fn3();
+        SBuffer buffer = new SBuffer();
+        buffer.fnProtected();
 
     }
 }

@@ -6,9 +6,9 @@ public class Demo {
     public static void main(String[] args) {
         // Instantiate an object of the Father class
         Father father = new Father();
-        father.fn1();
-        father.fn2();
-        father.fn3();
+        father.fnPublic();
+        father.fnProtected();
+        father.fnDefault();
         // private修饰的字段可以用get获取,set设置
         int a = father.getAge();
         System.out.println(a);
