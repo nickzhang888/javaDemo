@@ -4,7 +4,6 @@ import StrBuffer.SBuffer;
 
 public class Demo {
     public static void main(String[] args) {
-        // Instantiate an object of the Father class
         Father father = new Father();
         father.fnPublic();
         father.fnProtected();
@@ -18,11 +17,13 @@ public class Demo {
 
         SBuffer sb = new SBuffer();
 
-        String str = sb.str;
-        str = "change"; // 虽然值不能被修改,但值的引用可以被修改
+        // 虽然final修饰的引用类型地址不能被修改,但地址里的值可以被修改
+        String str = sb.myString;
+        str = "change";
         System.out.println(str);
 
         sb.myBuffer();
 
     }
+
 }
