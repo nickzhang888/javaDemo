@@ -8,6 +8,7 @@ public class TestCharacter {
         System.out.println(cha);
 
         String strCh = Character.toString(ch);
-        System.out.println(strCh instanceof String);
+        boolean result = strCh instanceof String;
+        System.out.println(result);
     }
 }
