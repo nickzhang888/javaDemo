@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 
 public class ArrList {
     public static void main(String[] args) {
         // 创建一个ArrayList
-        ArrayList<Person> personList = new ArrayList<>();
-
+        ArrayList<Person> personList = new ArrayList<Person>();
         // 添加Person对象到列表
         personList.add(new Person("Tom", 20));
         personList.add(new Person("Jerry", 25));
@@ -25,13 +25,20 @@ public class ArrList {
                 System.out.println(item);
             }
         });
-        // foreach循环
+        // 增强型 for 循环：
         for (Person item : personList) {
             if (item.getName() == "Tom") {
                 System.out.println(item);
                 continue;
             }
         }
+        // 使用迭代器遍历列表中的元素
+        Iterator<Person> iterator = personList.iterator();
+        while (iterator.hasNext()) {
+            Person person = iterator.next();
+            System.out.println("值: " + person);
+        }
+
     }
 }
 
