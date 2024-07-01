@@ -5,7 +5,7 @@ import java.util.Iterator;
 public class ArrList {
     public static void main(String[] args) {
         // 创建一个ArrayList
-        ArrayList<Person> personList = new ArrayList<Person>();
+        ArrayList<Person> personList = new ArrayList<>();
         // 添加Person对象到列表
         personList.add(new Person("Tom", 20));
         personList.add(new Person("Jerry", 25));
